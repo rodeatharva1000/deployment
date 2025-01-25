@@ -1,0 +1,12 @@
+#form_id{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+#form_id input{
+    border-radius: 15px;
+    height: 30px;
+    font-size: x-large;
+}

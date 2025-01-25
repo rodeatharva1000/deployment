@@ -1,0 +1,60 @@
+*{
+    background-color: black;
+    color: white;
+    font-size: large;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.image{
+    margin-bottom: 15px;
+    height: 15vw;
+    width: 15vw;
+}
+
+#parent{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    color: black;
+    background-color: aqua;
+    margin-top: 8px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.item-container{
+    padding: 8px;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.price{
+    color: aqua;
+}
+
+nav{
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav{
+    font-size:x-large;
+    color: black;
+    padding: 3px;
+    background-color: aqua;
+}
+
+.nav:hover{
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+#banner{
+    width: 100vw;
+    height: 50vh;
+}

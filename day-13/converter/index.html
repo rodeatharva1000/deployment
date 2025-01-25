@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Converter</title>
+    <style>
+        *{
+            padding: 0.3%;
+            padding-left: 0.9%;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .btn{
+            margin-left: 1%;
+        }
+        #add_res{
+            margin-left: 1%;
+        }
+    </style>
+
+    <script>
+        function add(event){
+            event.preventDefault();
+
+            let weight = parseInt(document.getElementById('id_1').value, 10);
+            let height = parseFloat(document.getElementById('id_2').value, 10);
+            let bmi = weight/ (height**2);
+            console.log(weight);
+            console.log(height);
+            console.log(bmi);
+            if (bmi < 18.5) {
+                document.getElementById("result").src = '1.png';
+            }
+            else if (bmi < 25) {
+                document.getElementById("result").src = '2.png';
+            }
+            else if (bmi < 30) {
+                document.getElementById("result").src = '3.png';
+            }
+            else if (bmi < 35) {
+                document.getElementById("result").src = '4.png';
+            }
+            else {
+                document.getElementById("result").src = '5.png';
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center;"><image style="width: 50vw;" src="bmii.jpg"></image></div>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Enter weight in kg's</label>
+        <input
+          id="id_1" class="form-control"/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Enter height in meter</label>
+        <input
+          id="id_2" class="form-control"/>
+      </div>
+
+      <button type="submit" onclick="add(event)" class="btn btn-primary">Submit</button>
+    </form>
+    <div style="display: flex; justify-content: center;">
+        <image style="width: 25%;" src="" id="result"></image>
+    </div>
+    </head>
+  <body>
+  </body>
+</html>
+

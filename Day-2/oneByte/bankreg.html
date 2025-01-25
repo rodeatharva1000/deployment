@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Registration Form</title>
+  </head>
+  <body>
+    <img width="100%" src="bank.webp" alt="Bank Banner">
+    <h1>Bank Registration Form</h1>
+    <fieldset>
+      <form>
+        <label>Full Name</label><br />
+        <input type="text" placeholder="Enter your full name" /><br /><br />
+
+        <label>Account Number</label><br />
+        <input type="text" placeholder="Enter your account number" /><br /><br />
+
+        <label>Date of Birth</label><br />
+        <input type="date" /><br /><br />
+
+        <label>Email</label><br />
+        <input type="email" placeholder="Enter your email" /><br /><br />
+
+        <label>Password</label><br />
+        <input type="password" placeholder="Enter a secure password" /><br /><br />
+
+        <label>Upload ID Proof</label><br />
+        <input type="file" /><br /><br />
+
+        <label>Account Type</label><br />
+        <select>
+          <option>Savings</option>
+          <option>Current</option>
+          <option>Fixed Deposit</option>
+        </select><br /><br />
+
+        <label>Branch Location</label><br />
+        <select>
+          <option>Mumbai</option>
+          <option>Delhi</option>
+          <option>Bangalore</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+        </select><br /><br />
+
+        <legend>Gender</legend>
+        <div>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+        </div><br />
+
+        <legend>Services Opt-In</legend>
+        <div>
+          <input type="checkbox" id="netbanking" />
+          <label for="netbanking">Net Banking</label>
+        </div>
+        <div>
+          <input type="checkbox" id="atm" />
+          <label for="atm">ATM/Debit Card</label>
+        </div>
+        <div>
+          <input type="checkbox" id="cheque" />
+          <label for="cheque">Cheque Book</label>
+        </div>
+        <div>
+          <input type="checkbox" id="mobilebanking" />
+          <label for="mobilebanking">Mobile Banking</label>
+        </div>
+
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

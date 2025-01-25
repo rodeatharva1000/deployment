@@ -1,0 +1,14 @@
+* {
+    padding: 0.3%;
+    padding-left: 0.9%;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.btn {
+    margin-left: 1%;
+}
+
+#add_res {
+    margin-left: 1%;
+}
